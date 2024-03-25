@@ -13,10 +13,13 @@ const getItemController = async (req, res) => {
 
 const postItemsController = async (req, res) => {
     try {
-      const { name, price, category,description, image } = req.body;
+      const { name, price, category,description,image } = req.body;
+      // const image = req.file.image
       if (!name || !price || !category || !description || !image) {
           return res.status(400).json({ message: 'All fields are required' });
       }
+
+        // console.log(req.body)
 
       const newItem = new itemModel({
           name: name,
@@ -25,8 +28,10 @@ const postItemsController = async (req, res) => {
           description : description,
           image: image
       });
+      // res.json(req.body)
       await newItem.save();
       res.status(200).json({ message: 'New Item Added Successfully!' });
+      return
   } catch (err) {
       console.log(err);
       res.status(500).json({ message: 'Internal Server Error' });

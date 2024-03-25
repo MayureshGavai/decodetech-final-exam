@@ -28,3 +28,5 @@ const items = [
         "image" : "https://m.media-amazon.com/images/I/61wsvCGXqnL._SL1500_.jpg"
     }
 ]
+
+module.exports = items

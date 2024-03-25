@@ -42,11 +42,11 @@ const RegisterPage = () => {
                 {errors?.password && <p style={{color:'red'}}>This field is required</p>}
             </div>
             <h1 className='mb-4'>Already have account? <Link to='/login' className='font-semibold underline'>Login</Link></h1>
-            <button type='submit' className='w-full py-2 bg-green-500 rounded-md text-white'>Register</button>
+            <button type='submit' className='w-full py-2 bg-black rounded-md text-white'>Register</button>
         </form>
 
       <ToastContainer />
-
+    
     </div>
   )
 }

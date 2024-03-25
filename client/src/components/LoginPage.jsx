@@ -48,8 +48,15 @@ const LoginPage = () => {
                 {errors?.password && <p style={{color:'red'}}>This field is required</p>}
             </div>
             <h1 className='mb-4'>Don't have account? <Link to='/register' className='font-semibold underline'>Register</Link></h1>
-            <button type='submit' className='w-full py-2 bg-green-500 rounded-md text-white'>Login</button>
+            <button type='submit' className='w-full py-2 bg-black rounded-md text-white'>Login</button>
         </form>
+        <div className='my-2 px-4'>
+          <h1>For reference you can use</h1>
+          <div className='flex gap-5'>  
+          <h1>Username : <span className='font-medium'>test</span></h1>
+          <h1>Password : <span className='font-medium'>test</span></h1>
+          </div>
+        </div>
       <ToastContainer />
 
     </div>

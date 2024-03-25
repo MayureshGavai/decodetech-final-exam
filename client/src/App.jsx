@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LoginPage from './components/LoginPage'
 import RegisterPage from './components/RegisterPage'
 import AddProduct from './components/AddProduct'
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const App = () => {
